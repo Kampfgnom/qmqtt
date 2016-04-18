@@ -73,7 +73,7 @@ void Client::setHost(const QString & host)
     d->host = host;
 }
 
-quint32 Client::port() const
+quint16 Client::port() const
 {
     Q_D(const Client);
     return d->port;
