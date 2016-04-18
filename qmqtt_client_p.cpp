@@ -33,6 +33,9 @@
 #include "qmqtt_client.h"
 #include "qmqtt_client_p.h"
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wconversion"
+
 namespace QMQTT {
 
 Q_LOGGING_CATEGORY(client, "qmqtt.client")
@@ -220,3 +223,5 @@ quint16 ClientPrivate::nextmid()
 }
 
 } // namespace QMQTT
+
+#pragma GCC diagnostic pop

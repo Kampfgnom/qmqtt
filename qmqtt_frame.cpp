@@ -33,6 +33,9 @@
 #include <QtCore/QLoggingCategory>
 #include "qmqtt_frame.h"
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+
 namespace QMQTT {
 
 Q_LOGGING_CATEGORY(frame, "qmqtt.frame")
@@ -114,9 +117,9 @@ void Frame::writeRawData(const QByteArray &data)
 void Frame::write(QDataStream &stream)
 {
     QByteArray lenbuf;
-    stream << (quint8)_header;
+    stream << static_cast<quint8>(_header);
     if(_data.size() == 0) {
-        stream << (quint8)0;
+        stream << static_cast<quint8>(0);
         return;
     }
     qCDebug(frame) << "_data.size: %d" << _data.size();
@@ -139,3 +142,5 @@ void Frame::encodeLength(QByteArray &lenbuf, int length)
 }
 
 } // namespace QMQTT
+
+#pragma GCC diagnostic pop

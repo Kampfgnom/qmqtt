@@ -33,6 +33,10 @@
 #include "qmqtt_client.h"
 #include "qmqtt_client_p.h"
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wconversion"
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+
 namespace QMQTT {
 
 Client::Client(const QString & host, quint16 port, QObject * parent /* =0 */)
@@ -333,3 +337,4 @@ void Client::handlePuback(quint8 type, quint16 msgid)
 
 } // namespace QMQTT
 
+#pragma GCC diagnostic pop
