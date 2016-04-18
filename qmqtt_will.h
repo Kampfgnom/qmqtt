@@ -32,7 +32,7 @@
 #ifndef QMQTT_WILL_H
 #define QMQTT_WILL_H
 
-#include <QObject>
+#include <QtCore/QObject>
 #include <QString>
 #include "qmqtt_global.h"
 namespace QMQTT {

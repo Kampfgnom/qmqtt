@@ -32,9 +32,9 @@
 #ifndef QMQTT_MESSAGE_H
 #define QMQTT_MESSAGE_H
 
-#include <QObject>
+#include <QtCore/QObject>
 #include <QString>
-#include <QByteArray>
+#include <QtCore/QByteArray>
 #include "qmqtt_global.h"
 namespace QMQTT {
 

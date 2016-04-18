@@ -32,11 +32,11 @@
 #ifndef QMQTT_NETWORK_H
 #define QMQTT_NETWORK_H
 
-#include <QObject>
-#include <QTcpSocket>
-#include <QPointer>
-#include <QBuffer>
-#include <QByteArray>
+#include <QtCore/QObject>
+#include <QtNetwork/QTcpSocket>
+#include <QtCore/QPointer>
+#include <QtCore/QBuffer>
+#include <QtCore/QByteArray>
 
 #include "qmqtt_frame.h"
 

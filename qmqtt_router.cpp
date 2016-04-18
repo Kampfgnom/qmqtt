@@ -34,7 +34,7 @@
 
 #include "qmqtt_client.h"
 #include "qmqtt_routesubscription.h"
-#include <QLoggingCategory>
+#include <QtCore/QLoggingCategory>
 
 namespace QMQTT {
 

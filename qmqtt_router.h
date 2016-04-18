@@ -33,7 +33,7 @@
 #ifndef QMQTT_ROUTER_H
 #define QMQTT_ROUTER_H
 
-#include <QObject>
+#include <QtCore/QObject>
 
 namespace QMQTT {
 

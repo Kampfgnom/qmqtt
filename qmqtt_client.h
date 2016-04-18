@@ -32,7 +32,7 @@
 #ifndef QMQTT_CLIENT_H
 #define QMQTT_CLIENT_H
 
-#include <QObject>
+#include <QtCore/QObject>
 #include "qmqtt_global.h"
 #include "qmqtt_will.h"
 #include "qmqtt_message.h"

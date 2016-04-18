@@ -31,7 +31,7 @@
  */
 
 #include <QDataStream>
-#include <QLoggingCategory>
+#include <QtCore/QLoggingCategory>
 #include "qmqtt_network.h"
 
 namespace QMQTT {

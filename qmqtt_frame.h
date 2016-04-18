@@ -32,7 +32,7 @@
 #ifndef QMQTT_FRAME_H
 #define QMQTT_FRAME_H
 
-#include <QObject>
+#include <QtCore/QObject>
 
 #define PROTOCOL_MAGIC "MQIsdp"
 

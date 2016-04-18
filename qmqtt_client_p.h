@@ -32,12 +32,12 @@
 #ifndef QMQTT_CLIENT_P_H
 #define QMQTT_CLIENT_P_H
 
-#include <QObject>
-#include <QPointer>
-#include <QTimer>
-#include <QDateTime>
-#include <QHostInfo>
-#include <QLoggingCategory>
+#include <QtCore/QObject>
+#include <QtCore/QPointer>
+#include <QtCore/QTimer>
+#include <QtCore/QDateTime>
+#include <QtNetwork/QHostInfo>
+#include <QtCore/QLoggingCategory>
 
 #include "qmqtt_global.h"
 #include "qmqtt_message.h"

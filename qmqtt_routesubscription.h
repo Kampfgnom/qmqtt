@@ -33,7 +33,7 @@
 #ifndef QMQTT_ROUTESUBSCRIPTION_H
 #define QMQTT_ROUTESUBSCRIPTION_H
 
-#include <QObject>
+#include <QtCore/QObject>
 #include <QRegularExpression>
 
 namespace QMQTT {
