@@ -92,7 +92,7 @@ class QMQTTSHARED_EXPORT Client : public QObject
 //    friend class ClientPrivate;
 
 public:
-    Client(const QString &host = "localhost", quint32 port = 1883, QObject * parent = 0);
+    Client(const QString &host = "localhost", quint16 port = 1883, QObject * parent = 0);
     ~Client();
 
     /*
@@ -101,7 +101,7 @@ public:
     QString host() const;
     void setHost(const QString & host);
     quint32 port() const;
-    void setPort(quint32 port);
+    void setPort(quint16 port);
 
     QString clientId() const;
     void setClientId(const QString &clientId);

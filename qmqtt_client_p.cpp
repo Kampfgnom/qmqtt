@@ -69,10 +69,10 @@ void ClientPrivate::init(QObject * parent)
     QObject::connect(network, SIGNAL(received(Frame &)), q, SLOT(onReceived(Frame &)));
 }
 
-void ClientPrivate::init(const QString &host, int port, QObject * parent)
+void ClientPrivate::init(const QString &h, quint16 p, QObject * parent)
 {
-    this->host = host;
-    this->port = port;
+    this->host = h;
+    this->port = p;
     init(parent);
 }
 

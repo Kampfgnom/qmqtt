@@ -44,7 +44,8 @@ public:
     Message();
     Message(quint16 id, const QString &topic, const QByteArray &payload,
             quint8 qos = 0, bool retain = false, bool dup = false);
-    ~Message();
+    Message(const Message &other) = default;
+    ~Message() = default;
 
     quint16 id();
     void setId(quint16 id);

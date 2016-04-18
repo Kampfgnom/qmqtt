@@ -75,7 +75,7 @@ bool Network::isConnected()
     return _connected;
 }
 
-void Network::connectTo(const QString & host, const quint32 port)
+void Network::connectTo(const QString & host, const quint16 port)
 {
 
     if(!_socket)

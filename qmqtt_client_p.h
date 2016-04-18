@@ -54,10 +54,10 @@ public:
     ClientPrivate(Client * qt);
     ~ClientPrivate();
     void init(QObject * parent = 0);
-    void init(const QString & host, int port, QObject *parent = 0);
+    void init(const QString & host, quint16 port, QObject *parent = 0);
 
     QString host;
-    quint32 port;
+    quint16 port;
     quint16 gmid;
 
     QString clientId;

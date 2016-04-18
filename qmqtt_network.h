@@ -67,7 +67,7 @@ signals:
     void received(Frame &frame);
 
 public slots:
-    void connectTo(const QString & host, quint32 port);
+    void connectTo(const QString & host, const quint16 port);
     //void error( QAbstractSocket::SocketError socketError );
 
 private slots:
@@ -81,7 +81,7 @@ private:
     void initSocket();
     int readRemaingLength(QDataStream &in);
     //sock
-    quint32 _port;
+    quint16 _port;
     QString _host;
     QPointer<QTcpSocket> _socket;
     //read data

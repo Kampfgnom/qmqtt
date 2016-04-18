@@ -53,11 +53,6 @@ Message::Message(quint16 id, const QString &topic, const QByteArray &payload,
 
 }
 
-Message::~Message()
-{
-    //NOTHING TODO
-}
-
 quint16 Message::id()
 {
     return _id;

@@ -35,7 +35,7 @@
 
 namespace QMQTT {
 
-Client::Client(const QString & host, quint32 port, QObject * parent /* =0 */)
+Client::Client(const QString & host, quint16 port, QObject * parent /* =0 */)
 :d_ptr(new ClientPrivate(this))
 
 {
@@ -75,7 +75,7 @@ quint32 Client::port() const
     return d->port;
 }
 
-void Client::setPort(quint32 port)
+void Client::setPort(quint16 port)
 {
     Q_D(Client);
     d->port = port;
